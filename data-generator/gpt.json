@@ -1,0 +1,37 @@
+{
+  "environment": {
+    "name": "10k",
+    "url": "http://localhost",
+    "user": "root",
+    "skip_prompt": true,
+    "config": {
+      "latency": "0"
+    },
+    "storage_nodes": ["default"]
+  },
+"gpt_data": {
+  "root_group": "gpt",
+  "large_projects": {
+    "group": "large_projects",
+    "project": "gitlabhq"
+  },
+  "many_groups_and_projects": {
+    "group": "many_groups_and_projects",
+    "subgroups": 10,
+    "subgroup_prefix": "gpt-subgroup-",
+    "projects": 5,
+    "project_prefix": "gpt-project-",
+    "initialize_with_readme": true,
+    "issues": {
+      "count": 10,
+      "title_prefix": "Issue #"
+    },
+    "merge_requests": {
+      "count": 5,
+      "source_branch_prefix": "feature/",
+      "target_branch": "main"
+    }
+  }
+}
+
+}
